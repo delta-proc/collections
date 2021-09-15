@@ -6,11 +6,15 @@ use Countable;
 use ArrayAccess;
 use ArrayIterator;
 use IteratorAggregate;
+
 class Collection implements Countable, ArrayAccess, IteratorAggregate
 {
     use Concerns\Map;
+    use Concerns\Each;
 
-    public function __construct(protected array $items = []) { }
+    public function __construct(protected array $items = [])
+    {
+    }
 
     public static function make($items = [])
     {
@@ -19,27 +23,32 @@ class Collection implements Countable, ArrayAccess, IteratorAggregate
         );
     }
 
-    public function count() {
+    public function count()
+    {
         return count($this->items);
     }
 
-    public function offsetExists($offset) {
+    public function offsetExists($offset)
+    {
         return isset($this->items[$offset]);
     }
 
-    public function offsetGet($offset) {
+    public function offsetGet($offset)
+    {
         return $this->items[$offset];
     }
 
-    public function offsetSet($offset, $value) {
-        if(is_null($offset)) {
+    public function offsetSet($offset, $value)
+    {
+        if (is_null($offset)) {
             return $this->items[] = $value;
         }
 
         $this->items[$offset] = $value;
     }
 
-    public function offsetUnset($offset) {
+    public function offsetUnset($offset)
+    {
         unset($this->items[$offset]);
     }
 
