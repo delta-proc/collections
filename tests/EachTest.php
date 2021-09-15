@@ -28,7 +28,7 @@ it('breaks out of iteration when callback returns false', function () {
 });
 
 
-it('exposes a value and a loop index arguments', function () {
+it('exposes value and a index arguments', function () {
     $items = ['foo', 'bar', 'baz'];
 
     Collection::make($items)->each(function ($item, $index) use ($items) {
