@@ -13,3 +13,7 @@ it('wraps a single argument in an array if it is not already an array')
 it('wraps an array of items')
     ->expect(fn () => Collection::make(['foo', 'bar', 'baz']))
     ->toHaveCount(3);
+
+it('acts as an array')
+    ->expect(fn () => Collection::make('foo')[0])
+    ->toBe('foo');
