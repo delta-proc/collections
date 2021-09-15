@@ -11,3 +11,11 @@ it('maps into a new datastructure')
         fn ($number) => $number->toBe(2),
         fn ($number) => $number->toBe(6)
     );
+
+it('exposes value and a loop index arguments', function () {
+    $items = ['foo', 'bar', 'baz'];
+
+    Collection::make($items)->map(function ($item, $index) use ($items) {
+        expect($items[$index])->toBe($item);
+    });
+});
