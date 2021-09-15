@@ -17,3 +17,11 @@ it('wraps an array of items')
 it('acts as an array')
     ->expect(fn () => Collection::make('foo')[0])
     ->toBe('foo');
+
+it('is iterable')
+    ->expect(fn () => Collection::make(['foo', 'bar', 'baz']))
+    ->sequence(
+        fn ($number) => $number->toBe('foo'),
+        fn ($number) => $number->toBe('bar'),
+        fn ($number) => $number->toBe('baz')
+    );

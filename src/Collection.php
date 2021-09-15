@@ -2,10 +2,12 @@
 
 namespace Leuverink\Collections;
 
-use ArrayAccess;
 use Countable;
+use ArrayAccess;
+use ArrayIterator;
+use IteratorAggregate;
 
-class Collection implements Countable, ArrayAccess
+class Collection implements Countable, ArrayAccess, IteratorAggregate
 {
     public function __construct(protected array $items = []) { }
 
@@ -38,5 +40,10 @@ class Collection implements Countable, ArrayAccess
 
     public function offsetUnset($offset) {
         unset($this->items[$offset]);
+    }
+
+    public function getIterator()
+    {
+        return new ArrayIterator($this->items);
     }
 }
