@@ -1,0 +1,24 @@
+{
+    "name": "leuverink/collections",
+    "description": "Collections implemented with generators",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Willem Leuverink",
+            "email": "willem@leuver.ink"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Leuverink\\Collections\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8"
+    },
+    "require-dev": {
+        "pestphp/pest": "1.x-dev"
+    }
+}
