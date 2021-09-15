@@ -6,9 +6,6 @@ trait Each
 {
     /**
      * Invoke callback for each item in the collection
-     *
-     * @param callable $callback
-     * @return Each
      */
     public function each(callable $callback): self
     {

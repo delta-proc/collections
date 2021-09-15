@@ -6,9 +6,6 @@ trait Map
 {
     /**
      * Map a collection using a callback.
-     *
-     * @param callable $callback
-     * @return Collection
      */
     public function map(callable $callback): self
     {
