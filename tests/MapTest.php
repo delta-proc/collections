@@ -12,6 +12,7 @@ it('maps into a new datastructure')
         fn ($number) => $number->toBe(6)
     );
 
+
 it('exposes value and a loop index arguments', function () {
     $items = ['foo', 'bar', 'baz'];
 
