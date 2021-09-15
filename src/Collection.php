@@ -29,6 +29,10 @@ class Collection implements Countable, ArrayAccess
     }
 
     public function offsetSet($offset, $value) {
+        if(is_null($offset)) {
+            return $this->items[] = $value;
+        }
+
         $this->items[$offset] = $value;
     }
 
