@@ -6,9 +6,10 @@ use Countable;
 use ArrayAccess;
 use ArrayIterator;
 use IteratorAggregate;
-
 class Collection implements Countable, ArrayAccess, IteratorAggregate
 {
+    use Concerns\Map;
+
     public function __construct(protected array $items = []) { }
 
     public static function make($items = [])
