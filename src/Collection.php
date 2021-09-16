@@ -13,7 +13,7 @@ class Collection implements Countable, ArrayAccess, IteratorAggregate
     use Concerns\Each;
     use Concerns\Reduce;
 
-    public function __construct(protected array $items = [])
+    final public function __construct(protected array $items = [])
     {
     }
 

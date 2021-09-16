@@ -20,11 +20,13 @@
     },
     "require-dev": {
         "pestphp/pest": "~1.18",
-        "friendsofphp/php-cs-fixer": "~3.1"
+        "friendsofphp/php-cs-fixer": "~3.1",
+        "phpstan/phpstan": "^0.12.99"
     },
     "scripts": {
         "fix": "vendor/bin/php-cs-fixer fix",
         "test": "vendor/bin/pest",
-        "coverage": "vendor/bin/pest --coverage"
+        "coverage": "vendor/bin/pest --coverage",
+        "analyze": "vendor/bin/phpstan analyse src tests --level=2"
     }
 }
