@@ -25,7 +25,7 @@ Read the tests
 - [ ] sum
 - [ ] average/avg
 - [ ] contains
-- [ ] first
+- [x] first
 - [ ] last
 - [ ] merge
 ### Filtering
