@@ -7,14 +7,12 @@ trait Reduce
     /**
      * Reduce the collection to a single value.
      */
-    public function reduce(callable $callback, $initial = null): mixed
+    public function reduce(callable $callback, $carry = null): mixed
     {
-        $result = $initial;
-
-        foreach ($this->items as $key => $value) {
-            $result = $callback($result, $value, $key);
+        foreach ($this as $key => $value) {
+            $carry = $callback($carry, $value, $key);
         }
 
-        return $result;
+        return $carry;
     }
 }
