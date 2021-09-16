@@ -4,6 +4,12 @@ Collections implementation with generators. This thing is just for practice
 ## How to use
 Read the tests
 
+## Scripts
+`composer fix`: Run php-cs-fixer
+`composer test`: Run test suite
+`composer coverage`: Generate coverage report
+`composer analyze`: Generate static analysis report
+
 ## Roadmap
 
 ### Critical
