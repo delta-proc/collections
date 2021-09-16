@@ -11,6 +11,7 @@ class Collection implements Countable, ArrayAccess, IteratorAggregate
 {
     use Concerns\Map;
     use Concerns\Each;
+    use Concerns\Reduce;
 
     public function __construct(protected array $items = [])
     {

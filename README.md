@@ -9,11 +9,9 @@ Read the tests
 ### Critical
 - [ ] Refactor to generators
 
-### The basics
+### The basics & too lazy to think of a category
 - [x] each
-- [x] map
-- [ ] filter
-- [ ] reduce
+- [x] reduce
 - [ ] tap
 - [ ] sum
 - [ ] average/avg
@@ -21,6 +19,8 @@ Read the tests
 - [ ] first
 - [ ] last
 - [ ] merge
+### Filtering
+- [ ] filter
 - [ ] except
 - [ ] only
 ### Sorting
@@ -28,6 +28,7 @@ Read the tests
 - [ ] sortBy
 - [ ] sortByDesc
 ### Transforming
+- [x] map
 - [ ] flatMap
 - [ ] mapWithKeys
 - [ ] mapSpread
