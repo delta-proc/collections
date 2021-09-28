@@ -24,6 +24,7 @@ it('acts as an array')
 
 it('is iterable')
     ->expect(Collection::make(['foo', 'bar', 'baz']))
+    ->toBeIterable()
     ->sequence(
         fn ($number) => $number->toBe('foo'),
         fn ($number) => $number->toBe('bar'),
