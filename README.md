@@ -28,6 +28,7 @@ Read the tests
 - [x] first
 - [ ] last
 - [ ] merge
+- [ ] isEmpty (refactor empty conditionals afterwards)
 ### Filtering
 - [ ] filter
 - [ ] except
@@ -48,9 +49,9 @@ Read the tests
 - [ ] all/toArray
 - [ ] toJson
 ### Conditionals
-- [ ] when
-- [ ] whenEmpty
-- [ ] whenNotEmpty
-- [ ] unless
+- [x] when
+- [x] whenEmpty
+- [x] whenNotEmpty
+- [x] unless
 - [ ] unlessEmpty
 - [ ] unlessNotEmpty
