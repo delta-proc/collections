@@ -53,5 +53,5 @@ Read the tests
 - [x] whenEmpty
 - [x] whenNotEmpty
 - [x] unless
-- [ ] unlessEmpty
-- [ ] unlessNotEmpty
+- [x] unlessEmpty
+- [x] unlessNotEmpty
