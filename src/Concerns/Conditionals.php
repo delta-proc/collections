@@ -17,4 +17,14 @@ trait Conditionals
     {
         return $this->when(!$expression, $callback);
     }
+
+    public function whenEmpty($callback)
+    {
+        return $this->when(empty($this->items), $callback);
+    }
+
+    public function whenNotEmpty($callback)
+    {
+        return $this->when(!empty($this->items), $callback);
+    }
 }
