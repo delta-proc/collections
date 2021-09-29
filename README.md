@@ -17,6 +17,7 @@ Read the tests
 
 ### Critical
 - [ ] Refactor to generators
+- [ ] Rust bindings? (@MichielBier)
 
 ### The basics & too lazy to think of a category
 - [x] each
@@ -26,7 +27,7 @@ Read the tests
 - [ ] average/avg
 - [ ] contains
 - [x] first
-- [ ] last
+- [x] last
 - [ ] merge
 - [ ] isEmpty (refactor empty conditionals afterwards)
 ### Filtering

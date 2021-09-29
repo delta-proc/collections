@@ -13,6 +13,7 @@ class Collection implements Countable, ArrayAccess, IteratorAggregate
     use Concerns\Each;
     use Concerns\Reduce;
     use Concerns\First;
+    use Concerns\Last;
     use Concerns\Conditionals;
 
     final public function __construct(protected array $items = [])
