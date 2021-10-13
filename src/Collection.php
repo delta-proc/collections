@@ -10,10 +10,11 @@ use IteratorAggregate;
 class Collection implements Countable, ArrayAccess, IteratorAggregate
 {
     use Concerns\Map;
+    use Concerns\Sum;
     use Concerns\Each;
-    use Concerns\Reduce;
+    // use Concerns\Last;
     use Concerns\First;
-    use Concerns\Last;
+    use Concerns\Reduce;
     use Concerns\Conditionals;
 
     final public function __construct(protected array $items = [])

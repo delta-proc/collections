@@ -23,7 +23,7 @@ Read the tests
 - [x] each
 - [x] reduce
 - [ ] tap
-- [ ] sum
+- [*] sum
 - [ ] average/avg
 - [ ] contains
 - [x] first
