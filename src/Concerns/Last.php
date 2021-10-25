@@ -5,8 +5,8 @@ namespace Leuverink\Collections\Concerns;
 trait Last
 {
     /**
-     * Get the first item in this collection, or return null.
-     * If passed a closure, it will return the first
+     * Get the last item in this collection, or return null.
+     * If passed a closure, it will return the last
      * item passing the given thruth check
      */
     public function last(callable $callback = null, $default = null): mixed
