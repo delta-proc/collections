@@ -4,6 +4,26 @@ Collections implementation with generators. This thing is just for practice
 ## How to use
 Read the tests
 
+
+### Rust bindings.
+
+To use the rust-bindings you will need to install rust.
+
+Go to https://rustup.rs to install cargo and the rustlang toolchain.
+
+If you are going to use the rust binding you wil need a php version >= 8.0
+
+To compile the php extention run:
+```
+cargo build --release
+```
+
+This creates a libcollections.so on linux and a libcollections.dylib on OSX.
+
+The run.sh file will link the extention based on your infra and run the test.php file
+
+
+
 ## Scripts
 `composer fix`: Run php-cs-fixer
 
