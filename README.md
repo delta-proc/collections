@@ -43,7 +43,7 @@ Read the tests
 - [ ] flatMap
 - [ ] mapWithKeys
 - [ ] mapSpread
-- [ ] count
+- [x] count
 - [ ] keys
 - [ ] values
 ### Representations
