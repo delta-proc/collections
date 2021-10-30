@@ -23,7 +23,7 @@ Read the tests
 - [x] each
 - [x] reduce
 - [ ] tap
-- [*] sum
+- [x] sum
 - [ ] average/avg
 - [ ] contains
 - [x] first
@@ -43,7 +43,7 @@ Read the tests
 - [ ] flatMap
 - [ ] mapWithKeys
 - [ ] mapSpread
-- [ ] count
+- [x] count
 - [ ] keys
 - [ ] values
 ### Representations
