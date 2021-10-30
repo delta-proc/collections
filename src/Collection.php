@@ -13,6 +13,7 @@ class Collection implements Countable, ArrayAccess, IteratorAggregate
     use Concerns\Sum;
     use Concerns\Each;
     use Concerns\Last;
+    use Concerns\Every;
     use Concerns\First;
     use Concerns\Reduce;
     use Concerns\Conditionals;
