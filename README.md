@@ -30,6 +30,7 @@ Read the tests
 - [x] last
 - [ ] merge
 - [ ] isEmpty (refactor empty conditionals afterwards)
+- [x] every
 ### Filtering
 - [ ] filter
 - [ ] except
